@@ -1,7 +1,8 @@
-import React, { Component } from "react"
-import { Link } from "gatsby"
-import logo from "../../images/logo-large.svg"
-import menuIcon from "../../images/menu.svg"
+/* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */
+import React, { Component } from "react";
+import { Link } from "gatsby";
+import logo from "../../images/logo-large.svg";
+import menuIcon from "../../images/menu.svg";
 
 class Header extends Component {
   openSidebar() {
@@ -23,6 +24,7 @@ class Header extends Component {
           style={{ display: "none" }}
           id="sidebar"
           onClick={this.closeSidebar}
+          role="navigation"
         >
           <button className="sidebar-button-on">
             <img src={menuIcon} alt="Menu" className="menu-icon"></img>

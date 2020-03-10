@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Crafty Co | Web Development`,
+    title: `DerrickJames | Web Development`,
     titleTemplate: "%s",
-    description: `We're on a mission to make the web beautiful.`,
+    description: `Developing applications for the modern web.`,
     image: "/logo.png",
-    twitterUsername: "@Simplecodehq",
-    siteUrl: "https://demos.simplecode.io/gatsby/crafty",
+    twitterUsername: "@DerrickGems",
+    siteUrl: "https://github.com/derrickjames/portfolio",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions, jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/click-events-have-key-events */
 import React, { Component } from "react"
 import Layout from "../components/Layout/layout"
 
@@ -61,19 +62,24 @@ class IndexPage extends Component {
             {homeItems}
           </div>
         </div>
-        <div id="modal" className="modal" onClick={this.closeModal}>
+        <div id="modal" className="modal">
           <div
             className={
               this.state.smallScreen ? "modal-content-small" : "modal-content"
             }
           >
-            <span className="modal-close">&times;</span>
+            <span className="modal-close" onClick={this.closeModal}>&times;</span>
             <div className="modal-grid-container">
               <div className="modal-grid-item-left">
                 <span className="modal-title">{this.state.modal.name}</span>
                 <p className="modal-text">{this.state.modal.description}</p>
                 <p className="modal-text">
-                  Completed: {this.state.modal.completed}
+                  Launched: {this.state.modal.completed}
+                </p>
+                <p className="modal-text">
+                  Link: <a href={this.state.modal.url} rel="noopener noreferrer" target="_blank">
+                      {this.state.modal.name}
+                  </a>
                 </p>
               </div>
               <div className="modal-grid-item-right">
@@ -105,6 +111,7 @@ export const query = graphql`
           description
           completed
           image
+          url
         }
       }
     }

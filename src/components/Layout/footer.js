@@ -4,10 +4,10 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer">
-        <a href="https://simplecode.io" className="footer-text">
+        <span className="footer-text">
           © {new Date().getFullYear()}
-          {` `} Simplecode. All rights reserved.
-        </a>
+          {` `} DerrickJames. All rights reserved.
+        </span>
       </footer>
     )
   }

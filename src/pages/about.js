@@ -58,10 +58,25 @@ class AboutPage extends Component {
           <h1 className="title">{aboutData.title}</h1>
           <div className="text">{aboutData.text}</div>
 
-          <div>
-            <h2 className="subtitle">{aboutData.subtitle}</h2>
+
+          <div style={{textAlign: "center", marginBottom: 10}}>
+            <a href={aboutData.github_url} rel="noopener noreferrer" target="_blank">
+              <img
+                src={aboutData.github_icon}
+                alt="Title"
+                style={{width: 50, height: 50}}
+                className="info-icon"
+              ></img>
+            </a>
           </div>
-          {teamMembers}
+
+          <div>
+              <h2 className="subtitle">
+                <a href={aboutData.github_url} className="custom-link" rel="noopener noreferrer" target="_blank">
+                   {aboutData.subtitle}
+                </a>
+            </h2>
+          </div>
         </div>
       </Layout>
     )
@@ -79,6 +94,8 @@ export const query = graphql`
         text
         subtitle
         name_icon
+        github_icon
+        github_url
         title_icon
         mail_icon
         twitter_icon

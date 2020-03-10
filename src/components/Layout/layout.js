@@ -1,8 +1,9 @@
-import React, { Component } from "react"
-import Header from "./header"
-import Footer from "./footer"
+import React, { Component } from "react";
+import Header from "./header";
+import Footer from "./footer";
 
-import "./layout.css"
+import "./layout.css";
+
 class layout extends Component {
   state = {
     smallScreen: false,
