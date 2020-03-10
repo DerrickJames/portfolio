@@ -8,21 +8,21 @@
     "home_items": [
       {
         "name": "CareerPrepped",
-        "image": "images/cp5.png",
+        "image": "images/careerprepped.png",
         "description": "Online talent development solution for the career education community which creates a global, competency-based talent community where soft skills are continuously developed and claims for both soft and hard skills are proven.",
         "url": "https://careerprepped.com",
         "completed": "April 2019"
       },
       {
         "name": "Army's Baby Closet",
-        "image": "images/bebus5.png",
+        "image": "images/armys-baby-closet.png",
         "description": "Army's Baby Closet is a sample eCommerce application for a baby clothes retailer.",
         "url": "https://armys-baby-closet.now.sh/",
         "completed": "February 2020"
       },
       {
         "name": "Crown Clothing",
-        "image": "images/bebus3.png",
+        "image": "images/crown-clothing.png",
         "description": "Crown Clothing is a sample eCommerce application built for a Turkish clothing manufacturer (Bebus) to demonstrate that there are better ways of building usable experiences which are targeted for business growth.",
         "url": "https://bebus-demo.herokuapp.com/",
         "completed": "March 2020"
