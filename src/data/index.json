@@ -17,7 +17,7 @@
         "name": "Army's Baby Closet",
         "image": "images/armys-baby-closet.png",
         "description": "Army's Baby Closet is a sample eCommerce application for a baby clothes retailer.",
-        "url": "https://armys-baby-closet.now.sh/",
+        "url": "https://armys-baby-closet.herokuapp.com/",
         "completed": "February 2020"
       },
       {
